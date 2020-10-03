@@ -25,7 +25,8 @@
 				$stmt->execute(array(
 					':fullname' => $fullname,
 					':username' => $username,
-					':password' => $password,
+					-':password' => $password,
+					':cpassword' => $cpassword,
 					':secretpin' => $secretpin
 					));
 				header('Location: register.php?action=joined');
